@@ -2,16 +2,31 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 
-//Toutes les actions à faire quand le bot se connecte
 client.on("ready", function () {
-  console.log("Mon BOT est Connecté");
+  console.log("Bot actif !");
 });
 
-// Répondre à un message
 client.on("message", function (message) {
   if (message.content === "Salut") {
-    // Lorsque "Salut" est envoyé
-    message.channel.send("Salut l'ami !");
+    message.channel.send("Salut !");
+    message.channel.send(
+      "Ceci est un test : " +
+        client.users.cache
+          .map((u) => `${u.username}#${u.discriminator}`)
+          .join(", ")
+    );
+    message.channel.send(
+      "Test n°2 : " + client.guilds.cache.array().forEach((u) => console.log(u))
+    );
+  }
+
+  if (message.content === "!restart") {
+    message.channel.send("Redémarrage en cours...").then((m) => {
+      client.destroy().then(() => {
+        client.login(config.token);
+      });
+    });
+    message.channel.send("Redémarrage terminé !");
   }
 });
 
