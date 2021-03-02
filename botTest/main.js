@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require("./config.json");
 
 //Toutes les actions à faire quand le bot se connecte
 client.on("ready", function () {
@@ -14,4 +15,4 @@ client.on("message", function (message) {
   }
 });
 
-client.login("ODE2Mjk0NDYwNDI5Njk3MDQ1.YD43dQ.F0558lcslKryB3mOjel7k-GTPbQ");
+client.login(config.token);
