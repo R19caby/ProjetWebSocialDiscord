@@ -1,0 +1,237 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix custom_discord: <http://www.semanticweb.org/thalie/ontologies/2021/2/customed-ontology#> .
+
+
+:Users0 rdf:type custom_discord:User ;
+    custom_discord:username "WebSocialBot"^^xsd:string ;
+    custom_discord:id "816294460429697045"^^xsd:string ;
+    custom_discord:avatar "c43912871936e1f168e1f693cd1811a5"^^xsd:string ;
+    custom_discord:bot "true"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 02 2021 14:02:45 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:flags "null"^^xsd:string ;
+    custom_discord:lastMessageContent "undefined"^^xsd:string ;
+    custom_discord:lastMessage "undefined"^^xsd:string ;
+    custom_discord:presence "online"^^xsd:string ;
+
+:Users1 rdf:type custom_discord:User ;
+    custom_discord:username "Kuracow"^^xsd:string ;
+    custom_discord:id "139088683671224320"^^xsd:string ;
+    custom_discord:avatar "e4015537d7a2f0cb27736067e05b504e"^^xsd:string ;
+    custom_discord:bot "false"^^xsd:string ;
+    custom_discord:createdAt "Tue Jan 19 2016 20:28:46 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:flags "0"^^xsd:string ;
+    custom_discord:lastMessageContent "Salut !"^^xsd:string ;
+    custom_discord:lastMessage "823909699212017665"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+
+:Users2 rdf:type custom_discord:User ;
+    custom_discord:username "ThalieB"^^xsd:string ;
+    custom_discord:id "695252691537887322"^^xsd:string ;
+    custom_discord:avatar "b86bcda58f65d5122bdaad6f4d1be495"^^xsd:string ;
+    custom_discord:bot "false"^^xsd:string ;
+    custom_discord:createdAt "Thu Apr 02 2020 14:45:58 GMT+0200 (Central European Summer Time)"^^xsd:string ;
+    custom_discord:flags "0"^^xsd:string ;
+    custom_discord:lastMessageContent "Salut à tous !"^^xsd:string ;
+    custom_discord:lastMessage "823909732854267914"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+
+:Users3 rdf:type custom_discord:User ;
+    custom_discord:username "Raphaël Caby"^^xsd:string ;
+    custom_discord:id "695191348424212510"^^xsd:string ;
+    custom_discord:avatar "39b0d570942bed3b052761c4a9ca2a07"^^xsd:string ;
+    custom_discord:bot "false"^^xsd:string ;
+    custom_discord:createdAt "Thu Apr 02 2020 10:42:13 GMT+0200 (Central European Summer Time)"^^xsd:string ;
+    custom_discord:flags "0"^^xsd:string ;
+    custom_discord:lastMessageContent "*"^^xsd:string ;
+    custom_discord:lastMessage "823909745391173682"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+
+:Guild rdf:type custom_discord:Guild ;
+    custom_discord:name "Projet Web Social"^^xsd:string ;
+    custom_discord:id "816289514707353660"^^xsd:string ;
+    custom_discord:Channel0 816289514707353661^^custom_discord:Channel;
+    custom_discord:Channel1 816289514707353662^^custom_discord:Channel;
+    custom_discord:Channel2 816289514707353663^^custom_discord:Channel;
+    custom_discord:Channel3 816289514707353664^^custom_discord:Channel;
+    custom_discord:Channel4 821390702633549854^^custom_discord:Channel;
+    custom_discord:Role0 816289514707353660^^custom_discord:Role;
+    custom_discord:Role1 816304973939474432^^custom_discord:Role;
+    custom_discord:Role2 821413838959280159^^custom_discord:Role;
+    custom_discord:Role3 821414337696366592^^custom_discord:Role;
+    custom_discord:Role4 821414487054876737^^custom_discord:Role;
+    custom_discord:applicationID "null"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:joinedAt "Tue Mar 02 2021 14:44:32 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:description "null"^^xsd:string ;
+    custom_discord:memberCount "4"^^xsd:string ;
+    custom_discord:owner 695191348424212510^^custom_discord:User;
+    custom_discord:region "europe"^^xsd:string ;
+
+:Member0 rdf:type custom_discord:Member ;
+    custom_discord:displayName "WebSocialBot"^^xsd:string ;
+    custom_discord:nickname "null"^^xsd:string ;
+    custom_discord:id "816294460429697045"^^xsd:string ;
+    custom_discord:user 816294460429697045^^custom_discord:user;
+    custom_discord:displayColor "0"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:guild;
+    custom_discord:joinedAt "Tue Mar 02 2021 14:44:32 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:lastMessageContent "undefined"^^xsd:string ;
+    custom_discord:lastMessage "undefined"^^xsd:string ;
+    custom_discord:permissions "372768337"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+    custom_discord:Role0 816304973939474432^^custom_discord:Role;
+    custom_discord:Role1 816289514707353660^^custom_discord:Role;
+
+:Member1 rdf:type custom_discord:Member ;
+    custom_discord:displayName "Damien Parmentier"^^xsd:string ;
+    custom_discord:nickname "Damien Parmentier"^^xsd:string ;
+    custom_discord:id "139088683671224320"^^xsd:string ;
+    custom_discord:user 139088683671224320^^custom_discord:user;
+    custom_discord:displayColor "10038562"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:guild;
+    custom_discord:joinedAt "Tue Mar 02 2021 15:11:34 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:lastMessageContent "Salut !"^^xsd:string ;
+    custom_discord:lastMessage "823909699212017665"^^xsd:string ;
+    custom_discord:permissions "104320577"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+    custom_discord:Role0 821414337696366592^^custom_discord:Role;
+    custom_discord:Role1 816289514707353660^^custom_discord:Role;
+
+:Member2 rdf:type custom_discord:Member ;
+    custom_discord:displayName "Thalie Borderon"^^xsd:string ;
+    custom_discord:nickname "Thalie Borderon"^^xsd:string ;
+    custom_discord:id "695252691537887322"^^xsd:string ;
+    custom_discord:user 695252691537887322^^custom_discord:user;
+    custom_discord:displayColor "15277667"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:guild;
+    custom_discord:joinedAt "Tue Mar 02 2021 15:11:46 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:lastMessageContent "Salut à tous !"^^xsd:string ;
+    custom_discord:lastMessage "823909732854267914"^^xsd:string ;
+    custom_discord:permissions "104320577"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+    custom_discord:Role0 821413838959280159^^custom_discord:Role;
+    custom_discord:Role1 816289514707353660^^custom_discord:Role;
+
+:Member3 rdf:type custom_discord:Member ;
+    custom_discord:displayName "Raphaël Caby"^^xsd:string ;
+    custom_discord:nickname "null"^^xsd:string ;
+    custom_discord:id "695191348424212510"^^xsd:string ;
+    custom_discord:user 695191348424212510^^custom_discord:user;
+    custom_discord:displayColor "15844367"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:guild;
+    custom_discord:joinedAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:lastMessageContent "*"^^xsd:string ;
+    custom_discord:lastMessage "823909745391173682"^^xsd:string ;
+    custom_discord:permissions "2147483647"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+    custom_discord:Role0 821414487054876737^^custom_discord:Role;
+    custom_discord:Role1 816289514707353660^^custom_discord:Role;
+
+:Roles0 rdf:type custom_discord:Role ;
+    custom_discord:name "@everyone"^^xsd:string ;
+    custom_discord:id "816289514707353660"^^xsd:string ;
+    custom_discord:color "0"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:Guild;
+    custom_discord:member0 816294460429697045^^custom_discord:Member;
+    custom_discord:member1 139088683671224320^^custom_discord:Member;
+    custom_discord:member2 695252691537887322^^custom_discord:Member;
+    custom_discord:member3 695191348424212510^^custom_discord:Member;
+    custom_discord:permissions "104320577"^^xsd:string ;
+
+:Roles1 rdf:type custom_discord:Role ;
+    custom_discord:name "ProjetWebSocial"^^xsd:string ;
+    custom_discord:id "816304973939474432"^^xsd:string ;
+    custom_discord:color "0"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 02 2021 14:44:32 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:Guild;
+    custom_discord:member0 816294460429697045^^custom_discord:Member;
+    custom_discord:permissions "268695632"^^xsd:string ;
+
+:Roles2 rdf:type custom_discord:Role ;
+    custom_discord:name "ontologie"^^xsd:string ;
+    custom_discord:id "821413838959280159"^^xsd:string ;
+    custom_discord:color "15277667"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 16 2021 17:05:20 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:Guild;
+    custom_discord:member0 695252691537887322^^custom_discord:Member;
+    custom_discord:permissions "104320577"^^xsd:string ;
+
+:Roles3 rdf:type custom_discord:Role ;
+    custom_discord:name "stardog"^^xsd:string ;
+    custom_discord:id "821414337696366592"^^xsd:string ;
+    custom_discord:color "10038562"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 16 2021 17:07:19 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:Guild;
+    custom_discord:member0 139088683671224320^^custom_discord:Member;
+    custom_discord:permissions "104320577"^^xsd:string ;
+
+:Roles4 rdf:type custom_discord:Role ;
+    custom_discord:name "bot"^^xsd:string ;
+    custom_discord:id "821414487054876737"^^xsd:string ;
+    custom_discord:color "15844367"^^xsd:string ;
+    custom_discord:createdAt "Tue Mar 16 2021 17:07:54 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:Guild;
+    custom_discord:member0 695191348424212510^^custom_discord:Member;
+    custom_discord:permissions "104320577"^^xsd:string ;
+
+:Channel0 rdf:type custom_discord:Channel ;
+    custom_discord:createdAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:id "816289514707353661"^^xsd:string ;
+    custom_discord:type "category"^^xsd:string ;
+
+:Channel1 rdf:type custom_discord:Channel ;
+    custom_discord:createdAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:id "816289514707353662"^^xsd:string ;
+    custom_discord:type "category"^^xsd:string ;
+
+:Channel2 rdf:type custom_discord:Channel ;
+    custom_discord:createdAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:id "816289514707353663"^^xsd:string ;
+    custom_discord:type "text"^^xsd:string ;
+
+:Channel3 rdf:type custom_discord:Channel ;
+    custom_discord:createdAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:id "816289514707353664"^^xsd:string ;
+    custom_discord:type "voice"^^xsd:string ;
+
+:Channel4 rdf:type custom_discord:Channel ;
+    custom_discord:createdAt "Tue Mar 16 2021 15:33:24 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:id "821390702633549854"^^xsd:string ;
+    custom_discord:type "text"^^xsd:string ;
+
+:Member0 rdf:type custom_discord:Member ;
+    custom_discord:displayName "WebSocialBot"^^xsd:string ;
+    custom_discord:nickname "null"^^xsd:string ;
+    custom_discord:id "816294460429697045"^^xsd:string ;
+    custom_discord:user 816294460429697045^^custom_discord:user;
+    custom_discord:displayColor "0"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:guild;
+    custom_discord:joinedAt "Tue Mar 02 2021 14:44:32 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:lastMessageContent ":')"^^xsd:string ;
+    custom_discord:lastMessage "823912355632775188"^^xsd:string ;
+    custom_discord:permissions "372768337"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+    custom_discord:Role0 816304973939474432^^custom_discord:Role;
+    custom_discord:Role1 816289514707353660^^custom_discord:Role;
+
+:Member1 rdf:type custom_discord:Member ;
+    custom_discord:displayName "Raphaël Caby"^^xsd:string ;
+    custom_discord:nickname "null"^^xsd:string ;
+    custom_discord:id "695191348424212510"^^xsd:string ;
+    custom_discord:user 695191348424212510^^custom_discord:user;
+    custom_discord:displayColor "15844367"^^xsd:string ;
+    custom_discord:guild 816289514707353660^^custom_discord:guild;
+    custom_discord:joinedAt "Tue Mar 02 2021 13:43:06 GMT+0100 (Central European Standard Time)"^^xsd:string ;
+    custom_discord:lastMessageContent "!members"^^xsd:string ;
+    custom_discord:lastMessage "823912606041374750"^^xsd:string ;
+    custom_discord:permissions "2147483647"^^xsd:string ;
+    custom_discord:presence "offline"^^xsd:string ;
+    custom_discord:Role0 821414487054876737^^custom_discord:Role;
+    custom_discord:Role1 816289514707353660^^custom_discord:Role;
+
